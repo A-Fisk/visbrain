@@ -355,7 +355,7 @@ def _read_hypno_hyp_sample(path):
     sf_hyp = 1 / float(hyp[0].split()[1])
 
     # Extract hypnogram values
-    hypno = np.array(hyp[4:], dtype=np.int)
+    hypno = np.array(hyp[4:], dtype=np.int64)
 
     # Replace values according to Iber et al 2007
     hypno[hypno == -2] = -1

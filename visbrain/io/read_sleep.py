@@ -614,7 +614,7 @@ def read_elan(path, downsample):
         start_time = datetime.time(0, 0, 0)
 
     # Channels
-    nb_chan = np.int(ent[9])
+    nb_chan = np.int64(ent[9])
     nb_chan = nb_chan
 
     # Last 2 channels do not contain data
